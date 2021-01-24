@@ -1,0 +1,191 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #edf2f8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    display: flex;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.35fr 0.75fr 0.75fr 1.5fr 1.5fr ;
+    row-gap: 20px;
+    width: 350px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+/*Fisrt testimonials*/
+
+#clifford{
+background-color: #733fc8;
+padding: 20px 20px 0 20px;
+border-radius: 10px;
+float: right;
+font-size: 16px;
+/*background-image: url(images/bg-pattern-quotation.svg);*/
+}
+
+img{
+    border-radius: 50%;
+    float: left;
+}
+
+#clifford h4{
+    color:#f2d2ff;
+}
+#clifford h5{
+    color:#f2d2ff;
+    opacity: 0.5;
+}
+
+#clifford h2{
+    color:#ffedff;
+}
+
+#clifford p{
+    color: #f2d2ff;
+    opacity: 0.7;
+}
+
+/*Second testimonials*/
+
+#walters{
+    background-color:#49556b;
+    padding: 20px 20px 0 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#walters h4{
+    color:#f7feff;
+}
+#walters h5{
+    color:#f7feff;
+    opacity: 0.5;
+}
+
+#walters h2{
+    color:#f7feff;
+}
+
+#walters p{
+    color: #f7feff;
+    opacity: 0.7;
+}
+
+/*Third testimonials*/
+
+#harmon{
+    background-color: #f8f8fa;
+    padding: 30px 20px 0 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#harmon h4{
+    color:#555863;
+}
+#harmon h5{
+    color:#555863;
+    opacity: 0.5;
+}
+
+#harmon h2{
+    color:#555863;
+}
+
+#harmon p{
+    color: #555863;
+    opacity: 0.7;
+}
+
+/*Fourth testimonials*/
+
+#abrams{
+    background-color:#19212e;
+    padding: 30px 20px 0 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#abrams h4{
+    color:#f2f8ff;
+}
+#abrams h5{
+    color:#f2f8ff;
+    opacity: 0.5;
+}
+
+#abrams h2{
+    color:#f2f8ff;
+}
+
+#abrams p{
+    color: #f2f8ff;
+    opacity: 0.7;
+}
+
+/*Fifth testimonials*/
+
+#whittle{
+    background-color:#ffffff;
+    padding: 30px 20px 0 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#whittle h4{
+    color:#494a53;
+}
+#whittle h5{
+    color:#494a53;
+    opacity: 0.5;
+}
+
+#whittle h2{
+    color:#494a53;
+}
+
+#whittle p{
+    color: #494a53;
+    opacity: 0.7;
+}
+
+@media (min-width:600px){
+    .container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+        grid-template-areas: 
+        "clifford clifford walters whittle"
+        "harmon abrams abrams whittle ";
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    #clifford{
+        grid-area: clifford ;
+        border: 1px solid white;
+    }
+    #walters{
+        grid-area: walters;
+        border: 1px solid #2bb3b1;
+    }
+    #harmon{
+        grid-area: harmon;
+        border: 1px solid #4abebd;
+    }
+    #abrams{
+        grid-area: abrams;
+        border: 1px solid #4abebd;
+    }
+    #whittle{
+        grid-area: whittle;
+        border: 1px solid #4abebd;
+    }
+}
